@@ -3,6 +3,7 @@
 namespace Sunstrike\Converter;
 
 use Sunstrike\Converter\Length\LengthConverter;
+use Sunstrike\Converter\Pressure\PressureConverter;
 use Sunstrike\Converter\Weight\WeightConverter;
 
 final class Convert
@@ -17,5 +18,10 @@ final class Convert
     public static function length(float $value): LengthConverter
     {
         return new LengthConverter($value);
+    }
+
+    public static function pressure(float $value): PressureConverter
+    {
+        return new PressureConverter($value);
     }
 }

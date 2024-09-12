@@ -34,3 +34,13 @@ $miles = Convert::length(100)->from('km')->to('mi'); // 62.137 miles
 
 
 ```
+Pressure conversion:
+```php
+<?php
+
+use Sunstrike/Converter/Convert;
+
+$miles = Convert::pressure(1)->from('bar')->to('pa'); // 100000 pascals
+
+
+```

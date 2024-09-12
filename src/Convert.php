@@ -14,7 +14,7 @@ final class Convert
         return new WeightConverter($value);
     }
 
-    public static function lenght(float $value): LengthConverter
+    public static function length(float $value): LengthConverter
     {
         return new LengthConverter($value);
     }
